@@ -16,7 +16,7 @@ header {
     background-color: #7d60b3;
     color: #f6f8f5;
 
-    outline-weight: 0.3px;
+    outline-width: 0.3px;
     outline-color: #333;
     outline-style: solid;
 }
@@ -71,7 +71,7 @@ nav button {
     right: 0;
     top: 0;
 
-    outline-weight: 0.3px;
+    outline-width: 0.3px;
     outline-color: #333;
     outline-style: dotted;
 }
@@ -100,7 +100,7 @@ main {
     padding: 1rem;
     margin: 0.7rem;
 
-    outline-weight: 0.3px;
+    outline-width: 0.3px;
     outline-color: #333;
     outline-style: dotted;
 }
@@ -110,7 +110,7 @@ main section {
     height: 10rem;
     padding: 0.3rem;
     margin: 0.7rem;
-    outline-weight: 0.3px;
+    outline-width: 0.3px;
     outline-color: #333;
     outline-style: dotted;
 }

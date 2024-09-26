@@ -28,10 +28,10 @@ header #Search {
 
 header input {
     position: absolute;
-    top: 2rem;
+    top: 1.5rem;
     left: 10rem;
     width: 75%;
-    height: 2rem;
+    height: 3rem;
     padding: 0.3rem;
     box-sizing: border-box;
     /*   outline-weight:0; */
@@ -59,7 +59,9 @@ nav button {
     display: inline-block;
     /*   font-size: 16px; */
 }
-
+#hidden_accounts{
+    display: none;
+}
 #sidebar {
     background-color: #f6f8f5;
     padding: 0.3rem;
@@ -97,8 +99,8 @@ main {
     position: relative;
     width: 78%;
     /*   height: 37rem; */
-    padding: 1rem;
-    margin: 0.7rem;
+    /* padding: 1rem;
+    margin: 0.7rem; */
 
     outline-width: 0.3px;
     outline-color: #333;
@@ -121,4 +123,29 @@ main section {
     height: 3rem;
     text-align: center;
     color: #7d60b3;
+}
+
+@media screen and (max-width: 1250px) {
+    nav{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    button{
+        font-size:16px;
+    }
+    #sidebar {
+       display: none; 
+    }
+    #hidden_accounts{
+        display:block;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+    }
+    header{
+        width:100vw;
+    }
+    main{
+        width:100vw;
+    }
 }

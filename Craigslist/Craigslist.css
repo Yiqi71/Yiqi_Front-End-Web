@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f6f8f5;
+    font-family: Trebuchet MS;
+}
+
+header {
+    position: relative;
+    /*   margin: 0.7rem; */
+    height: 8rem;
+    width: 82%;
+    background-color: #7d60b3;
+    color: #f6f8f5;
+
+    outline-weight: 0.3px;
+    outline-color: #333;
+    outline-style: solid;
+}
+
+header #Search {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+header input {
+    position: absolute;
+    top: 2rem;
+    left: 10rem;
+    width: 75%;
+    height: 2rem;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    /*   outline-weight:0; */
+}
+
+nav {
+    margin: 0.5rem;
+    margin-top: 0.9rem;
+    padding: 0.3rem;
+}
+
+nav button {
+    position: relative;
+
+    background-color: #7d60b3;
+    /*   border: none; */
+    color: #f6f8f5;
+    padding-left: 3.3%;
+    padding-right: 3.3%;
+    /*   width: 13.7%; */
+    height: 3rem;
+    /*   padding: 0.8rem 1rem; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /*   font-size: 16px; */
+}
+
+#sidebar {
+    background-color: #f6f8f5;
+    padding: 0.3rem;
+    margin: 0.7rem;
+    width: 15%;
+    height: 49rem;
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    outline-weight: 0.3px;
+    outline-color: #333;
+    outline-style: dotted;
+}
+
+#sidebar section {
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+#sidebar select {
+    padding: 0.1rem;
+    width: 7rem;
+    height: 1.8rem;
+}
+
+#About {
+    position: absolute;
+    bottom: 0;
+}
+
+main {
+    background-color: #f6f8f5;
+    position: relative;
+    width: 78%;
+    /*   height: 37rem; */
+    padding: 1rem;
+    margin: 0.7rem;
+
+    outline-weight: 0.3px;
+    outline-color: #333;
+    outline-style: dotted;
+}
+
+main section {
+    position: relative;
+    height: 10rem;
+    padding: 0.3rem;
+    margin: 0.7rem;
+    outline-weight: 0.3px;
+    outline-color: #333;
+    outline-style: dotted;
+}
+
+#craigslist {
+    position: relative;
+    bottom: 0;
+    height: 3rem;
+    text-align: center;
+    color: #7d60b3;
+}

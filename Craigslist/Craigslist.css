@@ -2,12 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     background-color: #f6f8f5;
     font-family: Trebuchet MS;
 }
-
 header {
     position: relative;
     /*   margin: 0.7rem; */
@@ -16,16 +14,14 @@ header {
     background-color: #7d60b3;
     color: #f6f8f5;
 
-    outline-width: 0.3px;
+    /* outline-width: 0.3px;
     outline-color: #333;
-    outline-style: solid;
+    outline-style: solid; */
 }
-
 header #Search {
     padding-top: 2rem;
     padding-left: 1rem;
 }
-
 header input {
     position: absolute;
     top: 1.5rem;
@@ -36,13 +32,32 @@ header input {
     box-sizing: border-box;
     /*   outline-weight:0; */
 }
+main {
+    background-color: #f6f8f5;
+    position: relative;
+    width: 78%;
+    /*   height: 37rem; */
+    /* padding: 1rem;
+    margin: 0.7rem; */
 
+    /* outline-width: 0.3px;
+    outline-color: #333;
+    outline-style: dotted; */
+}
+main section {
+    position: relative;
+    height: 10rem;
+    padding: 0.3rem;
+    margin: 0.7rem;
+    /* outline-width: 0.3px;
+    outline-color: #333;
+    outline-style: dotted; */
+}
 nav {
     margin: 0.5rem;
     margin-top: 0.9rem;
     padding: 0.3rem;
 }
-
 nav button {
     position: relative;
 
@@ -59,11 +74,20 @@ nav button {
     display: inline-block;
     /*   font-size: 16px; */
 }
-
+#About {
+    position: absolute;
+    bottom: 0;
+}
+#craigslist {
+    position: relative;
+    bottom: 0;
+    height: 3rem;
+    text-align: center;
+    color: #7d60b3;
+}
 #hidden_accounts {
     display: none;
 }
-
 #sidebar {
     background-color: #f6f8f5;
     padding: 0.3rem;
@@ -75,93 +99,88 @@ nav button {
     right: 0;
     top: 0;
 
-    outline-width: 0.3px;
+    /* outline-width: 0.3px;
     outline-color: #333;
-    outline-style: dotted;
+    outline-style: dotted; */
 }
-
 #sidebar section {
     padding: 0.5rem;
     margin: 1rem;
 }
-
 #sidebar select {
     padding: 0.1rem;
     width: 7rem;
     height: 1.8rem;
 }
 
-#About {
-    position: absolute;
-    bottom: 0;
-}
 
-main {
-    background-color: #f6f8f5;
-    position: relative;
-    width: 78%;
-    /*   height: 37rem; */
-    /* padding: 1rem;
-    margin: 0.7rem; */
 
-    outline-width: 0.3px;
-    outline-color: #333;
-    outline-style: dotted;
-}
 
-main section {
-    position: relative;
-    height: 10rem;
-    padding: 0.3rem;
-    margin: 0.7rem;
-    outline-width: 0.3px;
-    outline-color: #333;
-    outline-style: dotted;
-}
-
-#craigslist {
-    position: relative;
-    bottom: 0;
-    height: 3rem;
-    text-align: center;
-    color: #7d60b3;
-}
-
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 599px) {
+    header {
+        width: 100vw;
+    }
+    header input {
+        position: absolute;
+        top: 1.5rem;
+        left: 8rem;
+        width: 70%;
+        height: 3rem;
+        padding: 0.3rem;
+        box-sizing: border-box;
+        /*   outline-weight:0; */
+    }
+    main {
+        width: 100vw;
+    }
     nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left:0;
+        padding-right:0;
+        /* padding: 0rem; */
+    }
+    nav button {
+        font-size: 16px;
+        padding: 0.3%;
+    }
+    #hidden_accounts {
+        display: none;
+    }
+    #sidebar {
+        display: none;
+    }
 
+}
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    button {
+        font-size: 16px;
+        padding: 0;
+    }
+    header {
+        width: 100vw;
+    }
+    main {
+        width: 100vw;
+    }
+    nav {
         display: flex;
         flex-wrap: nowrap;
         /* margin：0； */
         /* padding: 0rem; */
     }
-
-    button {
-        font-size: 16px;
-    }
-
     #sidebar {
         display: none;
     }
-
     #hidden_accounts {
         display: block;
         position: absolute;
         top: 2rem;
         right: 1rem;
-        
-            width: 40px;
-            height: 40px;
-            background-color: #ccc;
-            border-radius: 50%;
-          
-    }
-
-    header {
-        width: 100vw;
-    }
-
-    main {
-        width: 100vw;
+        width: 40px;
+        height: 40px;
+        background-color: #ccc;
+        border-radius: 50%;
     }
 }

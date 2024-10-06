@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    color: #282108;
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+body {
+    background-color: #e9e0c4;
+    /* border-style: dashed; */
+}
+
+.header {
+    /* border-style: dashed; */
+    height: 5.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #282108;
+
+    border-bottom: 3px solid #282108;
+    transition: 1s;
+}
+
+.header div {
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+
+    h1 {
+        margin-left: 1rem;
+        color: #e9e0c4;
+    }
+
+    #down {
+        position: absolute;
+        left: 5.8rem;
+        top: 3.9rem;
+    }
+
+    img {
+        margin-right: 1.2rem;
+    }
+}
+
+main {
+    /* border-style: dashed; */
+    position: relative;
+    top: 6rem;
+    padding-bottom: 4rem;
+    /* max-height: 100vh; */
+    /* Set a fixed height to enable scrolling */
+    width: 100vw;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Enable vertical scrolling */
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+    /* 隐藏 Chrome 和 Safari 浏览器的滚动条 */
+}
+
+.timeline-content {
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: flex;
+}
+
+.timeline-content:first-child {
+    .medi {
+        border-color: #5F130C;
+        background-color: #5F130C;
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 1rem;
+
+        h3 {
+            color: #e9e0c4;
+        }
+
+        p {
+            color: #e9e0c4;
+        }
+    }
+
+    .food {
+        border-color: #125649;
+        background-color: #125649;
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 1rem;
+
+        h3 {
+            color: #e9e0c4;
+        }
+
+        p {
+            color: #e9e0c4;
+        }
+    }
+
+    .doc {
+        border-color: #4d7989;
+        background-color: #4d7989;
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 1rem;
+
+        h3 {
+            color: #e9e0c4;
+        }
+
+        p {
+            color: #e9e0c4;
+        }
+    }
+
+}
+
+
+.timeline-items {
+    /* border-style: dotted; */
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.timeline-item {
+    margin-bottom: 0.2rem;
+
+    width: calc(100vw - 10rem);
+    /* width: 70vw; */
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.food {
+    border-color: #125649;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 1rem;
+
+}
+
+.doc {
+    border-color: #4d7989;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 1rem;
+}
+
+.medi {
+    border-color: #5F130C;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 1rem;
+}
+
+.date {
+    /* border-style: dotted; */
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top:0.2rem;
+    width: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#today .circle {
+    background-color: #282108;
+    border-width: 3px;
+    border-color: #282108;
+    border-style: solid;
+    border-radius: 2rem;
+    color: #e9e0c4
+}
+
+.month {
+    margin: 0.5rem;
+    height: 3rem;
+    width: calc(100vw-1rem);
+    border-bottom: 3px solid #282108;
+}
+
+menu {
+
+    /* border-style: dashed; */
+    div {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 4rem;
+        /* border-style: solid; */
+        background-color: #282108;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    position: fixed;
+    width:100vw;
+
+    height:4rem;
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (min-width: 600px) {
+    .header {
+        width: 600px;
+    }
+
+    main {
+        width: 600px;
+    }
+
+    .timeline-item {
+        width: calc(600px - 10rem);
+    }
+
+    menu {
+        width: 600px;
+    }
+}

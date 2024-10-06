@@ -1,0 +1,11 @@
+a{
+    background-color:green;
+    color:white;
+    transition:1s;
+    font-size:2rem;
+  }
+  a:hover{
+    color:green;
+    background-color:white;
+    font-size: 4rem;
+  }

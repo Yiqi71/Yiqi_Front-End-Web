@@ -47,12 +47,13 @@ body {
 
     #down {
         position: absolute;
-        left: 5.8rem;
+        left: 5.7rem;
         top: 3.9rem;
     }
 
     img {
         margin-right: 1.2rem;
+        margin-left: 0.8rem;
     }
 }
 

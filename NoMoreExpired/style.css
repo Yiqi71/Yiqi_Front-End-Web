@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana, sans-serif;
-    color: #282108;
+    font-family: "Roboto Mono";
+    color: #3D3629;
 
     h1 {
         font-size: 32px;
@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #e9e0c4;
+    background-color: #E9E0C4;
     /* border-style: dashed; */
 }
 
@@ -28,10 +28,10 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: #282108;
+    background-color: #3D3629;
 
-    border-bottom: 3px solid #282108;
-    transition: 1s;
+    border-bottom: 3px solid #3D3629;
+    /* transition: 1s; */
 }
 
 .header div {
@@ -42,7 +42,7 @@ body {
 
     h1 {
         margin-left: 1rem;
-        color: #e9e0c4;
+        color: #E9E0C4;
     }
 
     #down {
@@ -61,13 +61,10 @@ main {
     /* border-style: dashed; */
     position: relative;
     top: 6rem;
-    padding-bottom: 4rem;
-    /* max-height: 100vh; */
-    /* Set a fixed height to enable scrolling */
+    padding-bottom: 0.5rem;
     width: 100vw;
     overflow-y: scroll;
     scrollbar-width: none;
-    /* Enable vertical scrolling */
 
     display: flex;
     flex-direction: column;
@@ -87,50 +84,50 @@ main::-webkit-scrollbar {
 
 .timeline-content:first-child {
     .medi {
-        border-color: #5F130C;
-        background-color: #5F130C;
-        border-width: 3px;
+        border-color: #724747;
+        background-color: #724747;
+        border-width: 4px 5px;
         border-style: solid;
         border-radius: 1rem;
 
         h3 {
-            color: #e9e0c4;
+            color: #E9E0C4;
         }
 
         p {
-            color: #e9e0c4;
+            color: #E9E0C4;
         }
     }
 
     .food {
-        border-color: #125649;
-        background-color: #125649;
-        border-width: 3px;
+        border-color: #4F6042;
+        background-color: #4F6042;
+        border-width: 4px 5px;
         border-style: solid;
         border-radius: 1rem;
 
         h3 {
-            color: #e9e0c4;
+            color: #E9E0C4;
         }
 
         p {
-            color: #e9e0c4;
+            color: #E9E0C4;
         }
     }
 
     .doc {
-        border-color: #4d7989;
-        background-color: #4d7989;
-        border-width: 3px;
+        border-color: #547377;
+        background-color: #547377;
+        border-width: 4px 5px;
         border-style: solid;
         border-radius: 1rem;
 
         h3 {
-            color: #e9e0c4;
+            color: #E9E0C4;
         }
 
         p {
-            color: #e9e0c4;
+            color: #E9E0C4;
         }
     }
 
@@ -150,30 +147,29 @@ main::-webkit-scrollbar {
     margin-bottom: 0.2rem;
 
     width: calc(100vw - 10rem);
-    /* width: 70vw; */
     padding: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
 .food {
-    border-color: #125649;
-    border-width: 3px;
+    border-color: #4F6042;
+    border-width: 4px 5px;
     border-style: solid;
     border-radius: 1rem;
 
 }
 
 .doc {
-    border-color: #4d7989;
-    border-width: 3px;
+    border-color: #547377;
+    border-width: 4px 5px;
     border-style: solid;
     border-radius: 1rem;
 }
 
 .medi {
-    border-color: #5F130C;
-    border-width: 3px;
+    border-color: #724747;
+    border-width: 4px 5px;
     border-style: solid;
     border-radius: 1rem;
 }
@@ -183,7 +179,7 @@ main::-webkit-scrollbar {
     position: relative;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top:0.2rem;
+    margin-top: 0.5rem;
     width: 2rem;
     display: flex;
     flex-direction: column;
@@ -199,34 +195,33 @@ main::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-weight: bold;
 }
 
 #today .circle {
-    background-color: #282108;
+    background-color: #3D3629;
     border-width: 3px;
-    border-color: #282108;
+    border-color: #3D3629;
     border-style: solid;
     border-radius: 2rem;
-    color: #e9e0c4
+    color: #E9E0C4;
 }
 
 .month {
-    margin: 0.5rem;
+    margin: 0.5rem 1rem;
     height: 3rem;
     width: calc(100vw-1rem);
-    border-bottom: 3px solid #282108;
+    border-bottom: 3px solid #3D3629;
 }
 
 menu {
-
     /* border-style: dashed; */
     div {
         height: 4rem;
         width: 4rem;
         border-radius: 4rem;
         /* border-style: solid; */
-        background-color: #282108;
+        background-color: #3D3629;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -241,6 +236,30 @@ menu {
     justify-content: center;
     align-items: center;
 
+}
+
+.month-calendar{
+    display: grid;
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    width: calc(100vw - 1rem);
+    padding: 0 0.5rem;
+    z-index: 500;
+    background-color: #3D3629;
+
+    div {
+        color: #E9E0C4;
+        padding: 1rem;
+    }
+
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    grid-gap: 0 0.5rem;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (min-width: 600px) {
@@ -258,5 +277,9 @@ menu {
 
     menu {
         width: 600px;
+    }
+
+    .month-calendar {
+        width: calc(600px - 1rem);
     }
 }

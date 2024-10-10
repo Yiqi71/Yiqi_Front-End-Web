@@ -113,7 +113,7 @@ main::-webkit-scrollbar {
     .medi {
         border-color: #5F130C;
         background-color: #5F130C;
-        border-width: 4px 5px;
+        border-width: 3px 3px;
         border-style: solid;
         border-radius: 1rem;
 
@@ -129,7 +129,7 @@ main::-webkit-scrollbar {
     .food {
         border-color: #125649;
         background-color: #125649;
-        border-width: 4px 5px;
+        border-width: 3px 3px;
         border-style: solid;
         border-radius: 1rem;
 
@@ -145,7 +145,7 @@ main::-webkit-scrollbar {
     .doc {
         border-color: #235B6D;
         background-color: #235B6D;
-        border-width: 4px 5px;
+        border-width: 3px 3px;
         border-style: solid;
         border-radius: 1rem;
 
@@ -181,7 +181,7 @@ main::-webkit-scrollbar {
 
 .food {
     border-color: #125649;
-    border-width: 4px 5px;
+    border-width: 3px 3px;
     border-style: solid;
     border-radius: 1rem;
 
@@ -189,14 +189,14 @@ main::-webkit-scrollbar {
 
 .doc {
     border-color: #235B6D;
-    border-width: 4px 5px;
+    border-width: 3px 3px;
     border-style: solid;
     border-radius: 1rem;
 }
 
 .medi {
     border-color: #5F130C;
-    border-width: 4px 5px;
+    border-width: 3px 3px;
     border-style: solid;
     border-radius: 1rem;
 }

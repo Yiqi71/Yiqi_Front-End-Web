@@ -8,13 +8,15 @@
         font-size: 32px;
     }
 }
-p {
-    font-size:14px;
 
- }
+p {
+    font-size: 14px;
+
+}
+
 body {
     background-color: #E0DCC9;
-    height:200vh;
+    height: 200vh;
     /* border-style: dashed; */
 }
 
@@ -61,7 +63,7 @@ header #top-left {
     }
 }
 
-header #top-right{
+header #top-right {
     height: 3rem;
 
     display: flex;
@@ -184,7 +186,6 @@ main::-webkit-scrollbar {
     border-width: 3px 3px;
     border-style: solid;
     border-radius: 1rem;
-
 }
 
 .doc {
@@ -265,19 +266,19 @@ menu {
 
 }
 
-.month-calendar{
+.month-calendar {
     display: none;
     position: absolute;
     top: 5.5rem;
 
     width: calc(100vw - 1rem);
-    padding: 0 0.5rem ;
+    padding: 0 0.5rem;
     z-index: 500;
     background-color: #3D3629;
 
     div {
         color: #E0DCC9;
-        margin:0 auto 1rem auto;
+        margin: 0 auto 1rem auto;
         padding: 0;
         background-color: #3D3629;
     }
@@ -286,17 +287,19 @@ menu {
     text-align: center;
     grid-gap: 0 0.5rem;
 }
-    #top-left:hover{
-        .month-calendar{
-            display:grid;
-        }
+
+#top-left:hover {
+    .month-calendar {
+        display: grid;
     }
+}
 
 @media (min-width: 600px) {
-    body{
-        margin:0 auto;
-        width:600px;
+    body {
+        margin: 0 auto;
+        width: 600px;
     }
+
     header {
         width: 600px;
     }
@@ -316,6 +319,4 @@ menu {
     .month-calendar {
         width: calc(600px - 1rem);
     }
-
-
 }

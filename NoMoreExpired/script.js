@@ -23,29 +23,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-// const header = document.querySelector("header");
-// if (header) {
-//   console.log("Header found"); // 检查 header 是否成功找到
-//   header.addEventListener("click", function () {
-//     console.log("Header clicked!"); // 确认点击事件是否触发
-//     const calendar = document.querySelector(".month-calendar");
-//     if (calendar) {
-//       if (calendar.classList.contains('hidden')) {
-//         calendar.classList.remove('hidden');
-//         console.log("Calendar shown");
-//       } else {
-//         calendar.classList.add('hidden');
-//         console.log("Calendar hidden");
-//       }
-//     } else {
-//       console.log("Cannot find .month-calendar");
-//     }
-//   });
-// } else {
-//   console.log("Cannot find .header");
-// }
-
 document.addEventListener("DOMContentLoaded", function() {
   const backToTodayButton = document.getElementById("backtotoday");
 

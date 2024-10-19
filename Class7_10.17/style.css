@@ -1,0 +1,13 @@
+body{
+    background-color: bisque;
+}
+#displayText{
+    background-color:azure;
+    padding:0.8rem;
+    margin: 1rem 0;
+}
+aside{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+}

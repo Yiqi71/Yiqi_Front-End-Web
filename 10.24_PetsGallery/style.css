@@ -1,0 +1,55 @@
+body{
+    font-family: "Playwrite GB S", cursive;
+    background-color: wheat;
+    padding: 0;
+    margin:0;
+}
+header{
+    background-color: chocolate;
+    padding: 0.2rem;
+    text-align:center;
+}
+h1 {
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+fieldset{
+    margin:1rem;
+    padding:1rem;
+}
+input, button{
+    margin:0.5rem;
+    padding:0.5rem;
+}
+#nameInput{
+    width:8rem;
+    height:1rem;
+}
+#ageInput{
+    width:5rem;
+    height:1rem;
+}
+#picInput{
+    width:20rem;
+    height:1rem;
+}
+#petsGalleryMain{
+    background-color: antiquewhite;
+    min-height:10rem;
+    margin:1rem;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#petsGalleryMain section{
+    margin:1rem;
+    padding:1rem;
+    img{
+        width:16rem;
+    }
+}
+
+.error{
+    border:solid 2px red;
+}

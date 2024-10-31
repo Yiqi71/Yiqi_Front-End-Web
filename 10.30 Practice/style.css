@@ -9,7 +9,12 @@ main{
         padding:0.5rem 1.5rem;
         border: solid 2px orange;
     }
-}
+}    
+div{
+        margin:1rem;
+        padding:0.2rem 1.5rem;
+       
+    }
 button{
     margin: 1rem;
     padding: 0.5rem 1rem;

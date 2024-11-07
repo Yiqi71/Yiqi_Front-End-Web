@@ -88,8 +88,9 @@ button{
     font-size: 16px;
     margin: 1em;
     background-color: #f5abe5;
-    box-shadow: 2px 2px 2px ;
+    box-shadow: 2px 2px 2px black;
     border-width: 0;
+    color: black;
 }
 button:hover{
     box-shadow:2px 2px 2px #f5abe5;
@@ -102,8 +103,9 @@ button:disabled:hover {
 
 #like{
     background-color: rgb(193, 215, 247);
-    box-shadow: 2px 2px 2px ;
+    box-shadow: 2px 2px 2px black;
     border: rgb(182, 204, 236) solid;
+    color: black;
 }
 #like:hover{
     background-color: rgb(182, 204, 236);
@@ -132,4 +134,5 @@ h2{
     font-size: 20px;
     font-weight: bold;
     margin: 1em;
+    color:black;
 }

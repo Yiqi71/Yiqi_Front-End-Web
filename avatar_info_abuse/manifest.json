@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "name": "Avatar Info Display",
+    "version": "1.0",
+    "description": "Display a user's chosen avatar on any page and track browsing history.",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "scripting",
+      "history"
+    ],
+    "action": {
+      "default_popup": "createAvatar.html",
+      "default_icon": {
+        "16": "icon_16.png",
+        "128": "icon_128.png"
+      }
+    },
+
+    "content_scripts": [
+      {
+        "_comment": ["avatar如何展示？"],
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["mainPage.css"]
+      }
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "icons": {
+      "16": "icon_16.png",
+      "128": "icon_128.png"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["icon.png"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
